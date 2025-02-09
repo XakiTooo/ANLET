@@ -10,7 +10,7 @@
   <div class="navbar-container"> 
     <header class="header">
         <h1>
-            <a href="dashboard.html" class="logo">ANLET</a>
+            <a href="index.html" class="logo">ANLET</a>
         </h1>
     
         <nav class="navbar">
@@ -22,7 +22,16 @@
         <!-- Tambahkan ikon hamburger -->
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
     </header>
-</div>
+  </div>
+
+  <!-- Menu yang akan ditoggle -->
+  <div id="menu" class="menu" style="display: none;">
+    <nav>
+        <a href="main.html">Jelajahi Pesan</a>
+        <a href="create.html">Buat Pesan</a>
+        <a href="profile.html">Contact Us</a>
+    </nav>
+  </div>
 
   <main class="dashboard-section">
     <!-- Hero Section -->
@@ -35,20 +44,18 @@
 
     <!-- Statistik Singkat -->
     <section class="stats">
-        <h2>
-            <span id="total-letters">0</span>
-            Surat Terkirim
-          </h2>
-          
+      <h2>
+        <span id="total-letters">0</span> Surat Terkirim
+      </h2>
     </section>
 
+    <!-- Surat Terbaru -->
     <section class="latest-letters">
       <h2>Surat Terbaru</h2>
       <div class="carousel-container">
-          <div class="carousel-track" id="latest-letters-container"></div>
+        <div class="carousel-track" id="latest-letters-container"></div>
       </div>
-  </section>
-  
+    </section>
 
     <!-- Panduan Singkat -->
     <section class="how-it-works">
@@ -70,12 +77,10 @@
     </section>
   </main>
 
+  <script type="module" src="script.js"></script>
 
-<script type="module" src="script.js"></script>
-
-</body>
-
-<footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <div class="footer-section">
         <h3>Its_MaMind</h3>
@@ -104,5 +109,16 @@
     <div class="footer-bottom">
       <p>&copy; 2024 Its_MaMind | All Rights Reserved</p>
     </div>
-</footer>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navbar = document.querySelector('.navbar');
+  
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
+
+</body>
 </html>
