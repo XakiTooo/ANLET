@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index Surat Anonim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="navbar-container"> 
+    <header class="header">
+        <h1>
+            <a href="index.html" class="logo">ANLET</a>
+        </h1>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Cari nama atau pesan...">
+          <button id="searchButton">Cari</button>
+        </div>
+
+        <nav class="navbar">
+            <a href="main.html">Jelajahi Pesan</a>
+            <a href="create.html">Buat Pesan</a>
+            <a href="profile.html">Contact Us</a>
+        </nav>
+
+        <!-- Tambahkan ikon hamburger -->
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </header>
+</div>
+
+
+  <main class="letter-box">
+    <h2>Surat Masuk</h2>
+    
+    <div id="popup-container"></div>
+  </main>
+
+  <div id="letters-container"><p>Memuat surat...</p></div>
+  <!-- Container untuk pop-up surat -->
+  
+  <script type="module" src="script.js"></script>
+
+</body>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-section">
+      <h3>Its_MaMind</h3>
+      <p>Yogyakarta</p>
+      <p><a href="mailto:itsmamind@gmail.com" target="_blank">Email</a></p>
+      <p><a href="https://wa.me/62881010148869" target="_blank" rel="noopener noreferrer">0881010148869</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Tautan Cepat</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profile.html">Tentang Kami</a></li>
+        <li><a href="profile.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Ikuti Kami</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/its_mamind?igsh=MXdtYWpyZmNwaDNzMQ=="><img src="img/instagram.png" alt="Instagram" id="logo-ig"></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2024 Its_MaMind | All Rights Reserved</p>
+  </div>
+</footer>
+</html>
