@@ -675,6 +675,11 @@ main .dashboard-section {
     flex-direction: column;
     margin: 10px;
   }
+
+  .ceo {
+    flex-direction: column;
+    margin: 10px;
+  }
 }
 
 
