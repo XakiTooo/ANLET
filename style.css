@@ -670,6 +670,11 @@ main .dashboard-section {
   .cta-button{
     margin: 5px;
   }
+
+  .biodata{
+    flex-direction: column;
+    margin: 10px;
+  }
 }
 
 
