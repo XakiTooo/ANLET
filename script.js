@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
             popup.innerHTML = `
                 <div class="popup-content">
                     <h2>Untuk: ${surat.to}</h2>
-                    <p>${surat.message}</p>
+                    <p>"${surat.message}"</p>
                     <small>${new Date(surat.date).toLocaleString("id-ID")}</small>
                     <button class="close-popup">Tutup</button>
                 </div>

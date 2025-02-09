@@ -247,14 +247,11 @@ button:hover {
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
-  width: calc(25% - 20px); /* 4 surat per baris */
-  max-width: 300px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease-in-out;
   width: 600px;
-  height: 400px;
+  height: 600px;
 }
 
 .popup-content h3 {
