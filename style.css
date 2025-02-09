@@ -659,9 +659,16 @@ main .dashboard-section {
     display: flex !important; /* Paksa tampil */
 }
 
-
   .hamburger-menu {
     display: block;
+  }
+  .popup-content {
+    width: 350px;
+    height: 500px; ;
+  }
+
+  .cta-button{
+    margin: 5px;
   }
 }
 
